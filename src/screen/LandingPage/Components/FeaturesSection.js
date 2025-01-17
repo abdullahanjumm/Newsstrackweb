@@ -36,7 +36,7 @@ function FeaturesSection() {
                     <div
                         style={{
                             position: "absolute",
-                            left: "91px", // Align with the center of the circles
+                            left: "14%", // Align with the center of the circles
                             top: "40px", // Start below the first circle
                             height: "calc(100% - 80px)", // Adjust based on the container height
                             width: "2px",
@@ -51,6 +51,7 @@ function FeaturesSection() {
                             alignItems: "flex-start",
                             marginBottom: "1rem",
                             justifyContent: "center",
+                            // backgroundColor:'red'
 
                         }}
                     >
@@ -79,6 +80,7 @@ function FeaturesSection() {
                                     fontWeight: "700",
                                     color: "#3B3C4E",
                                     marginBottom: "5px",
+                                    marginTop:'1%'
                                 }}
                             >
                                 Simple, Secure & Intuitive
@@ -133,6 +135,7 @@ function FeaturesSection() {
                                     fontWeight: "700",
                                     color: "#3B3C4E",
                                     marginBottom: "5px",
+                                    marginTop:'1%'
                                 }}
                             >
                                 Web & App Tracking
@@ -187,6 +190,7 @@ function FeaturesSection() {
                                     fontWeight: "700",
                                     color: "#3B3C4E",
                                     marginBottom: "5px",
+                                    marginTop:'1%'
                                 }}
                             >
                                 Work Reports

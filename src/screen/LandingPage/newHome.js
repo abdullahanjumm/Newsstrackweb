@@ -50,9 +50,9 @@ function NewHome() {
         </div>
         <div style={{
           position: 'absolute',
-          width: '102rem',
-          height: '79rem',
-          top: '-30%',
+          width: '150%',
+          height: '190%',
+          top: '-115%',
           background: 'linear-gradient(90deg, #0D4873, #0A304B, #071F2D, #0C364F, #0D4873)',
           borderRadius: '50%',
           zIndex: 1,
@@ -127,7 +127,7 @@ function NewHome() {
           <p style={{
             fontSize: '1rem',
             fontWeight: '400',
-            marginBottom: '1.49rem',
+            marginBottom: '2.49rem',
             marginTop: '1rem',
             fontFamily: "'Sinkin Sans', sans-serif",
           }}>
@@ -138,6 +138,7 @@ function NewHome() {
             justifyContent: 'center',
             gap: '30px',
             flexWrap: 'wrap',
+            marginBottom: '2.49rem',
           }}>
             <img src={microsoftlogo} alt="Microsoft" style={{ width: '11rem' }} />
             <img src={apple} alt="Apple" style={{ width: '3rem' }} />
@@ -152,7 +153,7 @@ function NewHome() {
           alt="Laptop and Mobile Mockup"
           style={{
             position: 'relative',
-            top: '50%',
+            // top: '60%',
             width: '81%',
             zIndex: 2,
           }}

@@ -10,7 +10,7 @@ function StartingSStrack() {
                     padding: "8rem",
                     background: "linear-gradient(90deg, #0D4873, #0A304B, #071F2D, #0C364F, #0D4873)",
                     textAlign: "center",
-                    borderRadius: "1rem",
+                    borderRadius: "40px",
                     color: "#FFFFFF",
                     maxWidth: "70%",
                     margin: "auto",

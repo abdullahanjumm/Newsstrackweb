@@ -71,10 +71,9 @@ function DownloadApp() {
       {/* Right Section */}
       <div
         style={{
-          flex: "2",
+          flex: "1.5",
           position: "relative",
           display: "flex",
-        //   backgroundColor:'red',
           justifyContent: "center",
           alignItems: "center",
         }}
@@ -83,7 +82,7 @@ function DownloadApp() {
           src={phoneMockup}
           alt="Phone Mockup"
           style={{
-            width: "90%",
+            width: "49rem",
             zIndex: "2",
             // marginLeft:'-25%'
           }}

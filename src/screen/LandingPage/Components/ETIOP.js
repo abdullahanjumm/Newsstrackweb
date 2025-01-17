@@ -70,8 +70,7 @@ function ETIOP() {
                     {/* Image Container */}
                     <div
                         style={{
-                            marginBottom: '30px',
-                            // backgroundColor:'grey',
+                            marginBottom: '15%',
                             height: '55%'
                         }}
                     >
@@ -124,8 +123,7 @@ function ETIOP() {
                     {/* Image Container */}
                     <div
                         style={{
-                            marginBottom: '30px',
-
+                            marginBottom: '15%',
                             height: '55%'
                         }}
                     >
@@ -177,8 +175,7 @@ function ETIOP() {
                     {/* Image Container */}
                     <div
                         style={{
-                            marginBottom: '30px',
-
+                            marginBottom: '15%',
                             height: '55%'
                         }}
                     >

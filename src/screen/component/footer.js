@@ -10,6 +10,7 @@ function Footer() {
             style={{
                 background: 'linear-gradient(90deg, #0D4873, #0A304B, #071F2D, #0C364F, #0D4873)',
                 width: '100%',
+                minHeight:'50vh'
 
             }}
         >
@@ -102,13 +103,20 @@ function Footer() {
 
 
 
-                <Row className="mt-8">
-                    <Col>
-                        <p className="text-center mb-0" style={{fontSize:'12px'}}>
-                            © All Rights Reserved 2025 SS Track.io
-                        </p>
-                    </Col>
-                </Row>
+                 {/* Bottom Row */}
+                 <Row>
+                        <Col>
+                            <p
+                                className="text-center mb-0"
+                                style={{
+                                    fontSize: "12px",
+                                    marginTop: "10%",
+                                }}
+                            >
+                                © All Rights Reserved 2025 SS Track.io
+                            </p>
+                        </Col>
+                    </Row>
             </Container>
         </footer>
     );
