@@ -71,7 +71,7 @@ function NewHome() {
           <h1 style={{
             fontSize: '2.2rem',
             fontWeight: '700',
-            fontFamily: "'Sinkin Sans', sans-serif",
+            // fontFamily: "'Sinkin Sans', sans-serif",
             marginBottom: '30px',
             marginTop: '10%',
           }}>End-to-End Employee Presence Tracking System</h1>
@@ -93,7 +93,7 @@ function NewHome() {
             alignItems: 'center',
             gap: '0',
             marginBottom: '2rem',
-            width: '30%',
+            width: '28%',
             maxWidth: '500px',
             borderRadius: '10px',
             overflow: 'hidden',

@@ -69,14 +69,15 @@ const NavigationBar = ({ scrollToSection1, scrollToSection2 }) => {
                                         <Button onClick={() => navigate('/download')} className="signUpButton" type="button" style={{
                                             marginRight: '20px',
                                             fontWeight: '400', // Sinkin Sans weight
-                                            fontSize: '0.8rem',  // Text size
+                                            fontSize: '0.8rem', 
+                                            fontFamily: "'Sinkin Sans', sans-serif",
 
                                         }}>Download</Button>
                                         <Button onClick={() => navigate('/signin')} className="btn loginButton1" type="button" style={{
                                             marginRight: '10px',
                                             fontWeight: '400', // Sinkin Sans weight
                                             fontSize: '0.8rem',  // Text size
-
+                                            fontFamily: "'Sinkin Sans', sans-serif",
                                             borderColor: '#8CCA6B', // Border color
                                             borderWidth: '1px',    // Optional for a visible border
                                         }}>Log In</Button>
