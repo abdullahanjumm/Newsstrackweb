@@ -1,7 +1,9 @@
 import React from "react";
 import productivityImage from "../../../images/break.svg"; // Replace with your image path
+import { useNavigate } from "react-router-dom";
 
 function ProductivitySection() {
+    const navigate = useNavigate();
     return (
         <div
             style={{
@@ -108,12 +110,13 @@ function ProductivitySection() {
                         backgroundColor: "#7ACB59",
                         color: "#FFFFFF",
                         fontSize: "16px",
-                        fontWeight: "600",
+                        fontWeight: "500",
                         padding: "10px 20px",
                         borderRadius: "8px",
                         border: "none",
                         cursor: "pointer",
                     }}
+                    onClick={() => navigate("/signup")}
                 >
                     Get Started →
                 </button>

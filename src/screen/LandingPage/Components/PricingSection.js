@@ -1,6 +1,6 @@
 import React from "react";
 
-function PricingSection() {
+function PricingSection({ onContactButtonClick }) {
     return (
         <div
             style={{
@@ -269,6 +269,7 @@ function PricingSection() {
                                 cursor: "pointer",
                                 marginTop: "30px",
                             }}
+                            onClick={onContactButtonClick}
                         >
                             Contact Us
                         </button>

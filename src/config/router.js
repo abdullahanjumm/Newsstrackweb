@@ -37,6 +37,7 @@ import UserSettings from '../companyOwner/owner-setting-components/userSetting'
 import ApplyForLeave from '../companyOwner/owner-setting-components/ApplyForLeave'
 import LocaitonTracking from "../Tracking/Locationtracking";
 import NewHome from "../screen/LandingPage/newHome";
+import AboutUs from "../screen/AboutUS/aboutUs";
 import { useSelector } from "react-redux";
 import jwtDecode from "jwt-decode";
 
@@ -109,8 +110,9 @@ export default function AppRouter() {
           <Route path="/" element={<Layout />}>
 
             {/* Public Routes */}
-
+            
             <Route path="/download" element={<Download />} />
+            <Route path="/aboutUs" element={<AboutUs/>} />
             <Route path="/signup" element={!token ? <Signup /> : <Navigate to="/dashboard" />} />
             <Route path="/account" element={token ? <Account suspended={suspended} /> : <Navigate to="/signup" />} />
             <Route path="/signin" element={!token ? <SignIn /> : <Navigate to="/dashboard" />} />

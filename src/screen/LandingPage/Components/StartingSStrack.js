@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function StartingSStrack() {
+    const navigate = useNavigate();
     return (
         <div style={{ paddingBottom: "9rem", paddingTop:'5rem', backgroundColor: "#FFFFFF", textAlign: "center" }}>
 
@@ -35,6 +37,18 @@ function StartingSStrack() {
                         cursor: "pointer",
                         marginBottom: "1rem",
                     }}
+                    onMouseEnter={(e) => {
+                        
+                        e.target.style.backgroundColor = "#7ACB59";
+                        e.target.style.color = "white";
+                        e.target.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.2)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = "white";
+                        e.target.style.color = "#7ACB59";
+                        e.target.style.boxShadow = "0 2px 5px rgba(0, 0, 0, 0.1)";
+                      }}
+                      onClick={() => navigate("/signup")}
                 >
                     Get started - it’s free
                 </button>

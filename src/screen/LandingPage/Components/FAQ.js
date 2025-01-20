@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function FAQ() {
+function FAQ({ onContactButtonClick }) {
     const [activeIndex, setActiveIndex] = useState(null);
 
     const faqs = [
@@ -88,7 +88,7 @@ function FAQ() {
                             <p
                                 style={{
                                     padding: "1rem",
-                                    fontSize: "18px",
+                                    fontSize: "13px",
                                     fontWeight: "500",
                                     color: "#555555",
                                     borderTop: "1px solid #E0E0E0",
@@ -114,6 +114,7 @@ function FAQ() {
                     borderRadius: "5px",
                     cursor: "pointer",
                 }}
+                onClick={onContactButtonClick}
             >
                 More Questions →
             </button>

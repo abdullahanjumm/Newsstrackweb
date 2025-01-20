@@ -72,23 +72,30 @@ function UserDashboardSection(params) {
                                     }}>Home</p>
                                 </div>
                                 <div className="ownerSectionUser1 text-white" onClick={() => {
-                                    navigate('/pricing')
+                                    navigate('/aboutUs')
                                 }} >
-                                    <p style={{ margin: 0, fontSize: '0.8rem', }} onClick={() => location.pathname === "/" ? scrollToSection('section3') : navigate("/")}>About us</p>
+                                    <p style={{ margin: 0, fontSize: '0.8rem', }} 
+
+                                    onClick={() => {
+                                        navigate('/aboutUs')
+                                    }}
+                                    >About us</p>
                                 </div>
-                                <div className="ownerSectionUser1 text-white" style={{ whiteSpace: 'nowrap' }} onClick={() => {
-                                    navigate('/workCards')
-                                }} >
-                                    <p style={{ margin: 0, fontSize: '0.8rem', }} onClick={() => location.pathname === "/" ? scrollToSection('section4') : navigate("/")}>How It Work</p>
+                                <div className="ownerSectionUser1 text-white" style={{ whiteSpace: 'nowrap' }} 
+                                // onClick={() => {
+                                //     navigate('/workCards')
+                                // }} 
+                                >
+                                    <p style={{ margin: 0, fontSize: '0.8rem', }} onClick={() => location.pathname === "/" ? scrollToSection('section1') : navigate("/")}>How It Work</p>
                                 </div>
-                                <div className="ownerSectionUser1 text-white" onClick={() => {
-                                    navigate('/pricing')
-                                }} >
-                                    <p style={{ margin: 0, fontSize: '0.8rem', }} onClick={() => location.pathname === "/" ? scrollToSection('section3') : navigate("/")}>Pricing</p>
+                                <div className="ownerSectionUser1 text-white"
+                                //  onClick={() => {
+                                //     navigate('/pricing')
+                                // }}
+                                 >
+                                    <p style={{ margin: 0, fontSize: '0.8rem', }} onClick={() => location.pathname === "/" ? scrollToSection('pricing') : navigate("/")}>Pricing</p>
                                 </div>
-                                <div className="ownerSectionUser1 text-white" onClick={() => {
-                                    navigate('/pricing')
-                                }} >
+                                <div className="ownerSectionUser1 text-white"  >
                                     <p style={{ margin: 0, fontSize: '0.8rem', }} onClick={() => location.pathname === "/" ? scrollToSection('section3') : navigate("/")}>Contact us</p>
                                 </div>
 

@@ -2,8 +2,10 @@ import React from 'react';
 import projectManagment from '../../../images/Pm.png'
 import monitoring from '../../../images/Monitoring.png'
 import TrainingAndAssesment from '../../../images/TandA.png'
+import { useNavigate } from 'react-router-dom';
 
 function ETIOP() {
+    const navigate = useNavigate();
     return (
         <div
             style={{
@@ -230,6 +232,7 @@ function ETIOP() {
                         borderRadius: '5px',
                         cursor: 'pointer',
                     }}
+                    onClick={() => navigate("/signup")}
                 >
                     Start Free Trial →
                 </button>

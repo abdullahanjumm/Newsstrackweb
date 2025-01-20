@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import apple from '../../images/apple.svg';
 import chrome from '../../images/chrome.svg';
@@ -19,7 +19,13 @@ import StartingSStrack from '../LandingPage/Components/StartingSStrack';
 
 function NewHome() {
   const navigate = useNavigate();
+  const contactSectionRef = useRef(null); // Create a ref for ContactSection
 
+  const scrollToContactSection = () => {
+    if (contactSectionRef.current) {
+      contactSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -79,8 +85,8 @@ function NewHome() {
             fontSize: '1rem',
             fontWeight: '400',
             marginBottom: '50px',
-            textAlign:'center',
-            width:'75%',
+            textAlign: 'center',
+            width: '75%',
             fontFamily: "'Sinkin Sans', sans-serif",
           }}>
             From work from home to office, onsite, in the field, or any specific job site, SS Track.io offers
@@ -163,15 +169,21 @@ function NewHome() {
 
       </div>
       <StatsSection />
-      <NewHIW />
+      <div id="section1">
+        <NewHIW />
+      </div>
       <ETIOP />
       <FeaturesSection />
       <ProductivitySection />
-      <PricingSection />
+      <div id="pricing">
+        <PricingSection onContactButtonClick={scrollToContactSection} />
+      </div>
       <DownaloadApp />
-      <FAQ />
-      <ContactSection />
-      <StartingSStrack/>
+      <FAQ onContactButtonClick={scrollToContactSection} />
+      <div ref={contactSectionRef} id="section3">
+        <ContactSection />
+      </div>
+      <StartingSStrack />
     </>
   );
 }

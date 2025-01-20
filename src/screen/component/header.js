@@ -10,11 +10,10 @@ import HeaderOption from './HeaderOption'
 const NavigationBar = ({ scrollToSection1, scrollToSection2 }) => {
     const navigate = useNavigate();
     const token = localStorage.getItem('token');
-    // const currentUser = JSON.parse(localStorage.getItem('items'));
     const dispatch = useDispatch();
 
     function logOut() {
-        localStorage.removeItem("items");
+        // localStorage.removeItem("items");
         localStorage.removeItem("token");
         localStorage.removeItem("cachedData");
         dispatch(setLogout());
@@ -29,15 +28,20 @@ const NavigationBar = ({ scrollToSection1, scrollToSection2 }) => {
     // console.log(currentUser);
     const location = useLocation();
 
+      // Conditional styles
+      const navbarBackground =
+      location.pathname === "/"
+          ? "transparent"
+          : "linear-gradient(90deg, #0D4873, #0A304B, #071F2D, #0C364F, #0D4873)";
     return (
 
         <section>
 
             <Navbar expand="lg" style={{
-                backgroundColor: "transparent",
-                padding: "0px 30px",
-                borderRadius: "20px",
-                margin: "30px 30px 0 30px",
+                background: navbarBackground,
+                // padding: "0px 30px",
+                // borderRadius: "20px",
+                // margin: "30px 30px 0 30px",
             }}>
 
                 <Container fluid>
